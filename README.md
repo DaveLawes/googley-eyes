@@ -90,56 +90,56 @@ I want any data collected to be stored locally
 ```    
 Browser                             
 ╔═══════════════════════╗     
-║ Chrome                ║     
+║ Chrome                  ║     
 ║ ╔═════════════════╗   ║
-║ ║                 ║   ║
-║ ║ localStorage    ║   ║
-║ ║ Chrome app      ║   ║
-║ ║                 ║   ║
+║ ║                  ║    ║
+║ ║ localStorage     ║    ║
+║ ║ Chrome app       ║    ║
+║ ║                  ║    ║
 ║ ╚═════════════════╝   ║
-║       |               ║
-║       | API           ║
-║       |               ║
-║       |               ║
+║       |                 ║
+║       | API             ║
+║       |                 ║
+║       |                 ║
 ║ ╔═════════════════╗   ║
-║ ║                 ║   ║
-║ ║ googley eyes    ║   ║
-║ ║ .crx            ║   ║
-║ ║                 ║   ║
+║ ║                  ║    ║
+║ ║ googley eyes     ║    ║
+║ ║ .crx             ║    ║
+║ ║                  ║    ║
 ║ ╚═════════════════╝   ║
-║         |             ║      
+║         |               ║      
 ╚═══════════════════════╝  
           |
           |  
           |           .json
           |      ╔════════════╗
-          |      ║            ║  Read first    
-          |------║  manifest  ║  Includes the scripts that need to be run
-                 ║            ║  Tells Chrome how to run our extension
+          |      ║             ║  Read first    
+          |------║  manifest   ║  Includes the scripts that need to be run
+                 ║             ║  Tells Chrome how to run our extension
                  ╚════════════╝
                        |
                        |    
                        |            
                        |   
                  ╔════════════╗  
-                 ║            ║  Defines scripts to run in the background
-                 ║ background ║  Defines event listeners  
-                 ║            ║  Writes to localStorage
+                 ║             ║  Defines scripts to run in the background
+                 ║ background  ║  Defines event listeners  
+                 ║             ║  Writes to localStorage
                  ╚════════════╝  
                        |
                        |    
                        |  (create new tab on button click)         
                        |   
                  ╔════════════╗  
-                 ║            ║  Single page view
-                 ║   index    ║  Show web activity  
-                 ║    html    ║  Includes js scripts to run
+                 ║             ║  Single page view
+                 ║   index     ║  Show web activity  
+                 ║    html     ║  Includes js scripts to run
                  ╚════════════╝
                        |
                        |               ╔════════════╗
-                       |               ║            ║  Reads from localStorage
-                       |---------------║   index    ║  Manipulates data and injects into the view
-                                       ║    js      ║
+                       |               ║             ║  Reads from localStorage
+                       |---------------║   index     ║  Manipulates data and injects into the view
+                                       ║    js       ║
                                        ╚════════════╝
 
 ```
